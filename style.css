@@ -175,6 +175,13 @@ i{
     margin: auto;
     padding: 40px 0;
 }
+.resume h1{
+    width: fit-content;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid;
+    border-width: medium;
+    margin: 2rem 0;
+}
 .cards{
     display: flex;
     gap: 5rem;
@@ -185,12 +192,6 @@ i{
     display: flex;
     flex-direction: column;
 }
-.skills h1{
-    width: fit-content;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid;
-    border-width: medium;
-}
 .skills .card{
     text-align: center;
 }
@@ -200,7 +201,33 @@ i{
 .skills img{
     width: 5rem;
 }
-
+.projects{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project{
+    border-radius: 0.5rem;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #393E46;
+    padding-bottom: 0.8rem;
+}
+.project p{
+    margin-left: 0.5rem;
+}
+.project img{
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.project .link{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
 
 /* contact-me */
 
@@ -368,6 +395,9 @@ i.fa-xl{
         right: -50%;
         top: -12%;
         height: 500px;width: 500px;
+    }
+    .projects .project{
+        width: 18rem;
     }
     /* .resume div{
         flex-direction: column;
