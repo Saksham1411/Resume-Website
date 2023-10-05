@@ -5,7 +5,6 @@
     box-sizing: border-box;
     scroll-behavior:smooth;
 }
-/* https://colorhunt.co/palette/0c134f1d267d5c469cd4adfc */
 body{
     color: #EEEEEE;
     font-family: 'Roboto Condensed', sans-serif;
@@ -15,21 +14,17 @@ body{
 a{
     text-decoration: none;
     color: #fff;
-    /* color: #3F2305; */
 }
 i{
-    /* color: #94a3b8; */
     margin-left: 5px;
 }
 .navbar{
-    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #222831;
 }
 .navbar .name{
-    /* font-style: italic; */
     font-family: 'Great Vibes', cursive;
     font-size: 1.5rem;
     color: #eee;
@@ -48,7 +43,6 @@ i{
     font-size: 1.5rem;
 }
 .navbar ul{
-    /* position: relative; */
     list-style: none;
     display: flex;
 }
@@ -73,8 +67,6 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* opacity: 0; */
     animation: fade-in 1s ease;
 }
 @keyframes fade-in {
@@ -109,7 +101,6 @@ i{
     top: 0%;
     position: absolute;
     right: -26%;
-    /* filter: saturate(0); */
     width: 600px;
 }
 .showcase .about{
@@ -152,11 +143,8 @@ i{
 .about-me{
     width: 75%;
     margin: 50px auto;
-    /* padding: 40px 0; */
-    /* border-top: 2px #DFD7BF solid;  */
 }
 .about-me h1{
-    /* text-align: center; */
     display: inline-block;
     margin-bottom: 3rem;
     border-bottom: 1px solid;
@@ -274,7 +262,6 @@ i{
     background-color: transparent;
 }
 .form input[type="text"]:focus,input[type="email"]:focus{
-    /* border: 1px #00ADB5 solid; */
     border-radius: 5px;
     outline: none;
 }
@@ -401,12 +388,6 @@ i.fa-xl{
     .projects .project{
         width: 18rem;
     }
-    /* .resume div{
-        flex-direction: column;
-    }
-    .resume div ul{
-        width: 100%;
-    } */
     .contact-me{
         flex-direction: column;
     }
