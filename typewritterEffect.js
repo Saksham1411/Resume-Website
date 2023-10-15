@@ -10,28 +10,19 @@ const TypeWriter = function(txtElement,words,wait = 1000){
 
 //type method
 TypeWriter.prototype.type = function(){
-    //index of word
     const curr = this.wordIndex % this.words.length;
-    //get full txt of curr word
     const fulltxt = this.words[curr];
-    // console.log(fulltxt);
-    //checking delete
     if(this.isDeleting){
-        //remove
         this.txt = fulltxt.substring(0,this.txt.length-1);
     }else{
-        //add
         this.txt = fulltxt.substring(0,this.txt.length+1);
     }
 
-    //insert txt into the element
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`
 
-    //type speed
     let typeSpeed = 200;
     if(this.isDeleting) typeSpeed /= 2;
     
-    // chk word is complete and move next
 
     if(!this.isDeleting && this.txt === fulltxt){
         typeSpeed = this.wait; // make pause after complete a word
